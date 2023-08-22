@@ -1,0 +1,162 @@
+.signUp-wrapper {
+    display: flex;
+
+    .signUp {
+        display: flex;
+        right: 2%;
+        top: 2%;
+        position: absolute;
+
+        button {
+            background-color: #FFFFFF;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'e-Ukraine-Medium';
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-weight: 500;
+            font-size: 15px;
+            color: #0F4AD2;
+            outline: none;
+            border: none;
+            gap: 10px;
+            cursor: pointer;
+
+            &:hover {
+                transition: 0.5s ease-in-out;
+                color: black;
+            } 
+
+            img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+
+        .popUp-wrapper {   
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(39, 39, 39, 0.90);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .popUp {
+                position: relative;
+                width: 479px;
+                height: 424px;
+                height: fit-content;
+                background-color: #0F4AD2;
+                color: #FFFFFF;
+                border-radius: 20px;
+                h2 {
+                    margin: 0;
+                    text-align: center;
+                    font-size: 40px;
+                    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+                    letter-spacing: -1px;
+                    font-family: 'e-Ukraine-Regular';
+                    font-weight: 700;
+                    padding: 40px 156px 40px;
+                }
+
+                .form-wrapper {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 0px 40px 0px;
+
+                    .input {
+                        border: none;
+                        outline: none;
+                        border-bottom: 1px solid #fff;
+                        padding-top: 30px;
+                        font-size: 20px;
+                        background-color: #0F4AD2;
+                        width: 100%;
+                        padding-bottom: 10px;
+                    }
+                    
+                    .input::placeholder {
+                        color: #fff;
+                        font-size: 20px;
+                        font-family: 'e-Ukraine-Regular';
+                        font-weight: 300;
+                    }
+
+                    .btn {
+                        display: flex;
+                        padding-top: 55px;
+                        padding-bottom: 10px;
+                        align-items: center;
+                        justify-content: center;                            
+
+                        button {
+                            width: 340px;
+                            height: 50px;
+                            background: #FFFFFF;
+                            color: #0F4AD2;
+                            text-align: center;
+                            font-size: 18px;
+                            font-family: 'WorkSans-Regular';
+                            font-weight: 600;
+                            border: none;
+                            outline: none;
+                            cursor: pointer;
+                            border-radius: 10px;    
+
+                        }  
+                    }
+
+                    .error-message {
+                        margin: 0;
+                        color: #FCD54C;
+                    }
+
+                    .password-wrapper {
+                        align-items: center;
+                        display: flex;
+                        img {
+                            position: absolute;
+                            display: flex;
+                            right: 8%;
+                            width: 32px;
+                            height: 32px;
+                            cursor: pointer;
+                        }
+                    }
+
+                    .log-in {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        gap: 10px;
+
+                        :visited {
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+
+            .close-btn {
+                position: absolute;
+                display: flex;
+                top: 15px;
+                right: 15px;
+                border: none;
+                outline: none;
+                background: transparent;
+                cursor: pointer;
+                width: 23px;
+                height: 23px;
+            }
+        } 
+    }
+}
+
+
+
+// Adaptation
