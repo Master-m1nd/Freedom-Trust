@@ -1,7 +1,7 @@
-.signUp-wrapper {
+.logIn-wrapper {
     display: flex;
 
-    .signUp {
+    .logIn {
         display: flex;
         right: 2%;
         top: 2%;
@@ -160,97 +160,3 @@
 
 
 // Adaptation
-
-// @media screen and (max-width: 1400px) and (min-width: 1024px) {
-
-//     .consult-btn-wrapper {
-//         .consult-btn {
-//             .popup-wrapper {
-
-//                 .close-btn {
-//                     left: 85%;
-//                 }
-
-//                 .popup {
-//                     max-width: 600px;
-//                     max-height: 525px;
-//                     h2 {
-//                         padding: 30px 90px 0px
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-
-// @media screen and (max-width: 1023px) and (min-width: 768px) {
-
-//     .consult-btn-wrapper {
-//         .consult-btn {
-//             .popup-wrapper {
-
-//                 .close-btn {
-//                     left: 88%;
-//                 }
-
-//                 .popup {
-//                     max-width: 550px;
-//                     max-height: 525px;
-//                     h2 {
-//                         padding: 30px 90px 0px
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }
-
-// @media screen and (max-width: 767px) and (min-width: 320px) {
-
-//     .consult-btn-wrapper {
-//         .consult-btn {
-//             .popup-wrapper {
-
-//                 .close-btn {
-//                     left: 88%;
-//                     top: 28%;
-//                 }
-
-//                 .popup {
-//                     max-width: 250px;
-//                     max-height: 300px;
-//                     h2 {
-//                         padding: 10px 0px 0px;
-//                         font-size: 20px;
-//                     }
-//                     p {
-//                         font-size: 10px;
-//                     }
-
-//                     .form-wrapper {
-//                         padding: 0px 10px 0px;
-
-//                         .input {
-//                             padding-top: 20px;
-//                             padding-bottom: 10px;
-//                             opacity: 1;
-//                         }
-
-//                         .error-message {
-//                             font-size: 12px;
-//                         }
-
-//                         .btn {
-//                             padding-top: 10px;
-//                             button {
-//                                 width: 160px;
-//                                 height: 50px;
-//                                 padding: 0;
-//                             }
-//                         }
-//                     }
-//                 }
-//             }
-//         }
-//     }
-// }

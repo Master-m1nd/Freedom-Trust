@@ -10,7 +10,7 @@ import open_password from '../../images/svg/password-eye.svg';
 import close_password from '../../images/svg/close-eye.svg';
 
 const SignUp = () => {
-    const [isPopUpOpen, setPopUpOpen] = useState(false);
+    const [isPopUpOpen, setPopUpOpen] = useState(true);
     const [passwordVisible, setPasswordVisible] = useState(false);
 
     const openPopUp = () => {
@@ -33,7 +33,7 @@ const SignUp = () => {
     return (
         <div className='signUp-wrapper'>
             <div className='signUp'>
-                <NavLink to = '/signUp'>
+                <NavLink to = '/logIn'>
                     <button onClick={openPopUp}>Login
                         <img src={avatar} alt='avatar' />
                     </button>
@@ -129,8 +129,7 @@ const SignUp = () => {
                                         <div className='log-in'>
                                             <p>Have an account?</p>
                                             <NavLink to='/logIn'>Log in</NavLink>
-                                        </div>
-                                        
+                                        </div>  
                                     </Form>
                                 )}
                             </Formik>

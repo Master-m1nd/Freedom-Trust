@@ -32,9 +32,9 @@ const LogIn = () => {
 
 
     return (
-        <div className='signUp-wrapper'>
-            <div className='signUp' onClick={openPopUp}>
-                <NavLink to = '/LogIn'>
+        <div className='logIn-wrapper'>
+            <div className='logIn' onClick={openPopUp}>
+                <NavLink to = '/logIn'>
                     <button>Login
                         <img src={avatar} alt='avatar' />
                     </button>
