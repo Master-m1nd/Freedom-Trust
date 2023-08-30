@@ -24,3 +24,7 @@
   font-family: 'Inter-Regular';
   src:url("./fonts/Inter/Inter-Regular.woff2");
 }
+
+.no-underline {
+  text-decoration: none;
+}

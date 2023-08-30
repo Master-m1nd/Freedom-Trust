@@ -1,0 +1,142 @@
+// .form-wrapper {
+    
+//     .enter-form {
+//         display: flex;
+//         color: #0F4AD2;
+//         font-family: 'e-Ukraine-Regular';
+//         font-size: 30px;
+//         font-weight: 400;
+//         letter-spacing: -0.75px;
+//         align-items: center;
+
+//         :visited {
+//             color: #0F4AD2;
+//         } 
+
+//         img {
+//             padding-right: 40px;
+//         }
+        
+//         .form-box {
+//             position: fixed;
+//             top: 0;
+//             left: 0;
+//             width: 100%;
+//             height: 100%;
+//             background: rgba(39, 39, 39, 0.90);
+//             display: flex;
+//             align-items: center;
+//             justify-content: center;
+
+//             .form {
+//                 position: relative;
+//                 width: 934px;
+//                 height: 960px;
+//                 height: fit-content;
+//                 background-color: #0F4AD2;
+//                 color: #FFFFFF;
+//                 border-radius: 20px;
+
+//                 .close-btn {
+//                     position: absolute;
+//                     display: flex;
+//                     top: 15px;
+//                     right: 15px;
+//                     border: none;
+//                     outline: none;
+//                     background: transparent;
+//                     cursor: pointer;
+//                     width: 23px;
+//                     height: 23px;
+//                 }
+                
+//                 h2 {
+//                     color: #FFF;
+//                     text-align: center;
+//                     font-family: 'e-Ukraine-Regular';
+//                     font-size: 40px;
+//                     font-weight: 700;
+//                     letter-spacing: -1px;
+//                 }
+
+//                 p {
+//                     color: #FFF;
+//                     text-align: center;
+//                     font-family: 'e-Ukraine-Regular';
+//                     font-size: 24px;
+//                     font-weight: 400;
+//                     line-height: 150%;
+//                 }
+
+//                 .line {
+//                     display: flex;
+//                     border-bottom: 1px dashed grey;
+//                     padding-left: 53px;
+//                 }
+
+//                 .form-container {
+//                     display: flex;
+//                     flex-direction: column;
+//                     padding: 0px 40px 0px;
+
+//                     .input {
+//                         border: none;
+//                         outline: none;
+//                         border-bottom: 1px solid #fff;
+//                         padding-top: 30px;
+//                         font-size: 20px;
+//                         background-color: #0F4AD2;
+//                         width: 100%;
+//                         padding-bottom: 10px;
+//                     }
+                    
+//                     .input::placeholder {
+//                         color: #fff;
+//                         font-size: 20px;
+//                         font-family: 'e-Ukraine-Regular';
+//                         font-weight: 300;
+//                     }
+
+//                     input:-webkit-autofill,
+//                     input:-webkit-autofill:hover, 
+//                     input:-webkit-autofill:focus, 
+//                     input:-webkit-autofill:active{
+//                         -webkit-background-clip: text;
+//                         -webkit-text-fill-color: #ffffff;
+//                     }
+
+//                     .btn {
+//                         display: flex;
+//                         padding-top: 55px;
+//                         padding-bottom: 10px;
+//                         align-items: center;
+//                         justify-content: center;                            
+
+//                         button {
+//                             width: 340px;
+//                             height: 50px;
+//                             background: #FFFFFF;
+//                             color: #0F4AD2;
+//                             text-align: center;
+//                             font-size: 18px;
+//                             font-family: 'WorkSans-Regular';
+//                             font-weight: 600;
+//                             border: none;
+//                             outline: none;
+//                             cursor: pointer;
+//                             border-radius: 10px;    
+
+//                         }  
+//                     }
+
+//                     .error-message {
+//                         margin: 0;
+//                         color: #FCD54C;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+
+    
+// }
