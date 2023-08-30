@@ -10,7 +10,7 @@ import open_password from '../../images/svg/password-eye.svg';
 import close_password from '../../images/svg/close-eye.svg';
 
 const LogIn = () => {
-    const [isPopUpOpen, setPopUpOpen] = useState(true);
+    const [isPopUpOpen, setPopUpOpen] = useState(false);
     const [passwordVisible, setPasswordVisible] = useState(false);
 
     const openPopUp = () => {
@@ -34,7 +34,7 @@ const LogIn = () => {
     return (
         <div className='logIn-wrapper'>
             <div className='logIn' onClick={openPopUp}>
-                <NavLink to = '/logIn'>
+                <NavLink to = '/logIn' className='no-underline'>
                     <button>Login
                         <img src={avatar} alt='avatar' />
                     </button>
@@ -55,21 +55,16 @@ const LogIn = () => {
 
                                     if (!values.email) {
                                         errors.email = 'Email is required';
+                                    }else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(values.email)) {
+                                        errors.email = 'Invalid email';
                                     }
                                     
                                     if (!values.password) {
                                         errors.password = 'Password is required';
+                                    }else if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(values.password)) {
+                                        errors.password = 'Minimum eight characters, at least one letter and one number';
                                     }
-
-                                    else { 
-                                        if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(values.email)) {
-                                            errors.email = 'Invalid email';
-                                        }
-
-                                        if (!/^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/.test(values.password)) {
-                                            errors.password = 'Minimum eight characters, at least one letter and one number';
-                                        }
-                                    }
+                                    
                                     return errors;
                                 }}
                                 onSubmit={(values, { setSubmitting }) => {
@@ -82,14 +77,14 @@ const LogIn = () => {
                             >
                                 {({ isSubmitting }) => (
                                     <Form className='form-wrapper'>
-                                        <Field className='input' type='email' name='email' placeholder='E-mail' />
+                                        <Field className='input' autoComplete='true' type='email' name='email' placeholder='E-mail' />
                                         <ErrorMessage name='email' component='p' className='error-message' />
                                         <div className='password-wrapper'>
-                                            <Field className='input' type={passwordVisible ? 'text': 'password'} name='password' placeholder='Password' />
+                                            <Field className='input' autoComplete='true' type={passwordVisible ? 'text': 'password'} name='password' placeholder='Password' />
                                             <img 
                                                 id='closeEye' 
                                                 src={passwordVisible ? open_password : close_password} 
-                                                onClick={togglePasswordVisibility} 
+                                                onClick={togglePasswordVisibility}  
                                                 alt='eye-icon'/>
                                         </div> 
                                         <ErrorMessage name='password' component='p' className='error-message' />
